@@ -1,13 +1,14 @@
-#include <iostream>
+#include <iostream> //header section
 using namespace std;
 
-int main() {    
+int main() 
+{                                        //main function
     float a, b, c,large;
 
     cout << "Enter three numbers: ";
-    cin >> a >> b >> c;
+    cin >> a >> b >> c;                                   //Gathering data
 
-    large= a>b?(a>c?a:c):(b>c?b:c);
-     cout << The largest of three numbers is"<<large<<"\n";
-    return 0;
+    large= a>b?(a>c?a:c):(b>c?b:c);                                  //ternary operator used
+     cout << The largest of three numbers is"<<large<<"\n";         
+    return 0;                                                       //return function
 }
