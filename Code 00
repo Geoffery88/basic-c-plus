@@ -2,19 +2,12 @@
 using namespace std;
 
 int main() {    
-    float n1, n2, n3;
+    float a, b, c,large;
 
     cout << "Enter three numbers: ";
-    cin >> n1 >> n2 >> n3;
+    cin >> a >> b >> c;
 
-    if(n1 >= n2 && n1 >= n3)
-        cout << "Largest number: " << n1;
-
-    if(n2 >= n1 && n2 >= n3)
-        cout << "Largest number: " << n2;
-    
-    if(n3 >= n1 && n3 >= n2)
-        cout << "Largest number: " << n3;
-  
+    large= a>b?(a>c?a:c):(b>c?b:c);
+     cout << The largest of three numbers is"<<large<<"\n";
     return 0;
 }
